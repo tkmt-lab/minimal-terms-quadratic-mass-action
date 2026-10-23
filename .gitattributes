@@ -1,0 +1,2 @@
+# Preserve the standard license text, including its terminal blank line.
+CC-BY-4.0.txt whitespace=-blank-at-eof

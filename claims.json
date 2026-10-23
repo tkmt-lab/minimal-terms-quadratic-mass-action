@@ -1,0 +1,155 @@
+{
+  "schema": "minimal-terms.claims.v1",
+  "version": "1.0.0",
+  "article_version": "draft v1",
+  "scope": {
+    "species": 2,
+    "reactant_molecularity_max": 2,
+    "product_molecularity": "unrestricted",
+    "coefficients": "real",
+    "equilibrium": "positive, scaled to (1,1)",
+    "jacobian": "entirely zero",
+    "resultant_nonzero": true,
+    "quantity": "nonzero concentration-coordinate monomials counted separately in each component",
+    "reaction_minimum": false,
+    "historical_domain_equivalence": false,
+    "priority_claimed": false,
+    "formal_proof_assistant": false,
+    "human_peer_review": false
+  },
+  "results": [
+    {
+      "type": "H",
+      "minimum": 8,
+      "best_count_in_ye_v1": 9
+    },
+    {
+      "type": "P2H",
+      "minimum": 8,
+      "best_count_in_ye_v1": 8
+    },
+    {
+      "type": "D,H",
+      "minimum": 8,
+      "best_count_in_ye_v1": 10
+    },
+    {
+      "type": "D,P2H",
+      "minimum": 8,
+      "best_count_in_ye_v1": 8
+    },
+    {
+      "type": "P1,P2,H",
+      "minimum": 8,
+      "best_count_in_ye_v1": 9
+    },
+    {
+      "type": "P1,H,H",
+      "minimum": 8,
+      "best_count_in_ye_v1": 9
+    },
+    {
+      "type": "P1,P2,P2H",
+      "minimum": 8,
+      "best_count_in_ye_v1": 8
+    },
+    {
+      "type": "P1,H,P2H",
+      "minimum": 6,
+      "best_count_in_ye_v1": 6
+    },
+    {
+      "type": "P1,P2H,P2H",
+      "minimum": 6,
+      "best_count_in_ye_v1": 8
+    }
+  ],
+  "claims": [
+    {
+      "id": "nine-minima",
+      "kind": "prose",
+      "statement": "The nine listed minima hold over all admissible real nonnegative parameters in the stated domain.",
+      "evidence": [
+        "paper/paper-v1.tex",
+        "paper/paper-v1.pdf",
+        "certificates/index.json",
+        "certificates/lower-bound.json"
+      ],
+      "qualification": "The proof combines attained exact witnesses, support exhaustion and inequalities for three positive-parameter families; it is not a proof-assistant formalization."
+    },
+    {
+      "id": "nine-attained-witnesses",
+      "kind": "exact-computation",
+      "statement": "Nine rational witnesses attain the listed counts, have nonzero resultant and realize the stated line-type multisets.",
+      "evidence": [
+        "certificates/index.json",
+        "checkers/exact_check.py",
+        "checkers/independent_fraction.py",
+        "checkers/verify.py"
+      ],
+      "reproduce": "python3 -B checkers/verify.py",
+      "qualification": "The reaction lists prove realizability; their reaction counts are not claimed minimal."
+    },
+    {
+      "id": "lower-bound-supports",
+      "kind": "exact-computation",
+      "statement": "All 49 supports with both components nonzero are counted. Exactly eight have fewer than eight terms; three are excluded by zero resultant and five reduce to three positive-parameter families.",
+      "evidence": [
+        "certificates/lower-bound.json",
+        "checkers/face_proof.py",
+        "checkers/independent_fraction.py",
+        "paper/paper-v1.tex"
+      ],
+      "reproduce": "python3 -B checkers/verify.py",
+      "qualification": "Symbolic identities are checked. The real-parameter inequalities and species-swap reasoning are in the displayed mathematical proof."
+    },
+    {
+      "id": "separate-verification",
+      "kind": "independent-implementation",
+      "statement": "A separate verification, with its own witnesses and support derivation, obtained the same nine minima; its standard-library checker is included and rerun.",
+      "evidence": [
+        "certificates/independent-witnesses.json",
+        "checkers/independent_fraction.py",
+        "VERIFICATION-RECORD.md"
+      ],
+      "reproduce": "python3 -B checkers/verify.py",
+      "qualification": "The specification, parameter cone, counting rule, line-type tests and published examples were shared. The research results, proof and code were originally withheld. Packaging is subsequent integration, not a new independent derivation; the earlier SymPy run is not rerun by this package."
+    },
+    {
+      "id": "comparison-with-pinned-source",
+      "kind": "exact-computation",
+      "statement": "Five counts decrease and four prior attained counts are proved optimal relative to Yeung and Erban arXiv:2610.06130v1 Table 1 and its Section 4 six-term example.",
+      "evidence": [
+        "certificates/independent-witnesses.json",
+        "paper/paper-v1.tex",
+        "README.md"
+      ],
+      "reproduce": "python3 -B checkers/verify.py",
+      "qualification": "Types are computed from explicit coefficients. This is a bounded comparison, not a worldwide priority result."
+    }
+  ],
+  "not_claimed": [
+    "Minimum number of reactions",
+    "A result for zero resultant, zero components or boundary equilibria",
+    "Equivalence to the entire historical Lyagina or Newton classification domains",
+    "Nine distinct classes under arbitrary topological equivalence",
+    "A complete priority search or a first-result claim",
+    "Human peer review or proof-assistant assurance",
+    "A general-purpose classifier for arbitrary cubic slope polynomials"
+  ],
+  "question_source": {
+    "authors": [
+      "N. Yeung",
+      "R. Erban"
+    ],
+    "url": "https://arxiv.org/abs/2610.06130v1",
+    "locations": [
+      "Table 1",
+      "Section 4"
+    ]
+  },
+  "license": {
+    "code": "Apache-2.0",
+    "original_prose_and_numeric_data": "CC-BY-4.0"
+  }
+}

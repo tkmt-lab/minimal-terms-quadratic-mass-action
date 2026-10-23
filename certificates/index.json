@@ -1,0 +1,192 @@
+{
+  "schema": "minimal-terms.witness-index.v1",
+  "parameter_order": [
+    "s",
+    "t",
+    "c",
+    "q",
+    "r",
+    "d"
+  ],
+  "coefficient_order": [
+    "1",
+    "x",
+    "y",
+    "x^2",
+    "xy",
+    "y^2"
+  ],
+  "witnesses": [
+    {
+      "id": 1,
+      "type": "H",
+      "minimum": 8,
+      "parameters": [
+        0,
+        0,
+        3,
+        1,
+        0,
+        2
+      ],
+      "positive_time_scale": 6,
+      "resultant": "9",
+      "source_certificate": "certificates/source-witnesses/01.json",
+      "certificate": "certificates/witnesses/01.json",
+      "ye_table_row": 1,
+      "best_count_in_ye_v1": 9
+    },
+    {
+      "id": 2,
+      "type": "P2H",
+      "minimum": 8,
+      "parameters": [
+        1,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "positive_time_scale": 4,
+      "resultant": "9",
+      "source_certificate": "certificates/source-witnesses/02.json",
+      "certificate": "certificates/witnesses/02.json",
+      "ye_table_row": 4,
+      "best_count_in_ye_v1": 8
+    },
+    {
+      "id": 3,
+      "type": "D,H",
+      "minimum": 8,
+      "parameters": [
+        0,
+        0,
+        9,
+        4,
+        0,
+        2
+      ],
+      "positive_time_scale": 15,
+      "resultant": "1296",
+      "source_certificate": "certificates/source-witnesses/03.json",
+      "certificate": "certificates/witnesses/03.json",
+      "ye_table_row": 5,
+      "best_count_in_ye_v1": 10
+    },
+    {
+      "id": 4,
+      "type": "D,P2H",
+      "minimum": 8,
+      "parameters": [
+        2,
+        0,
+        0,
+        3,
+        0,
+        1
+      ],
+      "positive_time_scale": 6,
+      "resultant": "64",
+      "source_certificate": "certificates/source-witnesses/04.json",
+      "certificate": "certificates/witnesses/04.json",
+      "ye_table_row": 8,
+      "best_count_in_ye_v1": 8
+    },
+    {
+      "id": 5,
+      "type": "P1,P2,H",
+      "minimum": 8,
+      "parameters": [
+        0,
+        0,
+        56,
+        25,
+        0,
+        12
+      ],
+      "positive_time_scale": 93,
+      "resultant": "1960000",
+      "source_certificate": "certificates/source-witnesses/05.json",
+      "certificate": "certificates/witnesses/05.json",
+      "ye_table_row": 11,
+      "best_count_in_ye_v1": 9
+    },
+    {
+      "id": 6,
+      "type": "P1,H,H",
+      "minimum": 8,
+      "parameters": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "positive_time_scale": 4,
+      "resultant": "4",
+      "source_certificate": "certificates/source-witnesses/06.json",
+      "certificate": "certificates/witnesses/06.json",
+      "ye_table_row": 12,
+      "best_count_in_ye_v1": 9
+    },
+    {
+      "id": 7,
+      "type": "P1,P2,P2H",
+      "minimum": 8,
+      "parameters": [
+        31,
+        0,
+        0,
+        33,
+        0,
+        64
+      ],
+      "positive_time_scale": 128,
+      "resultant": "9042049",
+      "source_certificate": "certificates/source-witnesses/07.json",
+      "certificate": "certificates/witnesses/07.json",
+      "ye_table_row": 14,
+      "best_count_in_ye_v1": 8
+    },
+    {
+      "id": 8,
+      "type": "P1,H,P2H",
+      "minimum": 6,
+      "parameters": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "positive_time_scale": 2,
+      "resultant": "1",
+      "source_certificate": "certificates/source-witnesses/08.json",
+      "certificate": "certificates/witnesses/08.json",
+      "ye_table_row": 15,
+      "best_count_in_ye_v1": 6
+    },
+    {
+      "id": 9,
+      "type": "P1,P2H,P2H",
+      "minimum": 6,
+      "parameters": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "positive_time_scale": 2,
+      "resultant": "1",
+      "source_certificate": "certificates/source-witnesses/09.json",
+      "certificate": "certificates/witnesses/09.json",
+      "ye_table_row": 16,
+      "best_count_in_ye_v1": 8
+    }
+  ]
+}

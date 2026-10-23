@@ -1,0 +1,32 @@
+{
+  "parameter_order": ["s", "t", "c", "q", "r", "d"],
+  "coefficient_order": ["1", "x", "y", "x^2", "xy", "y^2"],
+  "witnesses": [
+    {"id": "own-1", "type": 1, "parameters": [1,0,4,0,0,4], "M": 8},
+    {"id": "own-4", "type": 4, "parameters": [1,0,0,2,0,1], "M": 8},
+    {"id": "own-5", "type": 5, "parameters": [1,0,3,0,0,8], "M": 8},
+    {"id": "own-8", "type": 8, "parameters": [2,0,0,3,0,1], "M": 8},
+    {"id": "own-11", "type": 11, "parameters": [4,0,5,0,0,18], "M": 8},
+    {"id": "own-12", "type": 12, "parameters": [0,0,2,2,1,0], "M": 8},
+    {"id": "own-14", "type": 14, "parameters": [3,0,0,5,0,1], "M": 8},
+    {"id": "own-15", "type": 15, "parameters": [1,0,0,0,0,1], "M": 6},
+    {"id": "own-16", "type": 16, "parameters": [1,0,0,1,0,0], "M": 6}
+  ],
+  "paper_controls": [
+    {"id": "table-1", "type": 1, "ABCDEF": [6,-6,0,2,-4,39], "M": 9},
+    {"id": "table-4", "type": 4, "ABCDEF": [24,0,0,58,-116,100], "M": 8},
+    {"id": "table-5", "type": 5, "ABCDEF": [12,-3,0,4,-8,22], "M": 10},
+    {"id": "table-8", "type": 8, "ABCDEF": [6,0,0,1,-2,16], "M": 8},
+    {"id": "table-11", "type": 11, "ABCDEF": [8,-8,0,1,-2,9], "M": 9},
+    {"id": "table-12", "type": 12, "ABCDEF": [1,-1,0,0,-1,2], "M": 9},
+    {"id": "table-14", "type": 14, "ABCDEF": [35,0,0,4,-8,81], "M": 8},
+    {"id": "table-15", "type": 15, "ABCDEF": [85,0,0,4,-8,20], "M": 8},
+    {"id": "table-16", "type": 16, "ABCDEF": [62,0,0,2,-4,64], "M": 8},
+    {"id": "discussion-six", "type": 15, "ABCDEF": [1,-2,1,0,0,1], "M": 6},
+    {"id": "lemma6-equality", "type": 15, "ABCDEF": ["1/2",0,0,1,-2,1], "M": 6}
+  ],
+  "excluded_controls": [
+    {"id": "zero-component", "ABCDEF": [0,0,0,1,-2,4]},
+    {"id": "equilibrium-line", "ABCDEF": [1,-2,1,1,-2,1]}
+  ]
+}

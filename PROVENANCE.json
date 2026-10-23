@@ -1,0 +1,115 @@
+{
+  "schema": "minimal-terms.provenance.v1",
+  "research_input_commit": "bc151e1d1dba992467996658c6b7cf7f5cee947f",
+  "paper_commit": "0859caa140e062225a6f52d3550f04fa0c95c8a0",
+  "files": [
+    {
+      "source": "studies/R022/paper-R022-v1-en.tex",
+      "source_sha256": "7d52f571d1af4fa54371a6f6b883d29a4694ec126a840e39ff4ac0c3cd0fd125",
+      "path": "paper/paper-v1.tex",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/paper-R022-v1-en.pdf",
+      "source_sha256": "b9f687157ce100973944c52ef3df7069abf73e934baa17df02b1b2b6e5b30f97",
+      "path": "paper/paper-v1.pdf",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/pilot-code/exact_check.py",
+      "source_sha256": "cb709760178cc352c78340c674696c610ae1d65173a84337b0b33982334170a0",
+      "path": "checkers/exact_check.py",
+      "adaptation": "guard"
+    },
+    {
+      "source": "studies/R022/scan/checking/face_proof.py",
+      "source_sha256": "5e45b417c779dadc224be72b830ba50540b57f0dad0eeb46a3ae9968f585efd8",
+      "path": "checkers/face_proof.py",
+      "adaptation": "adapt_faces"
+    },
+    {
+      "source": "studies/R004/r022-independent/check_fraction.py",
+      "source_sha256": "63f7b15a0e68d70f5017ee9ed625be738c6364a95b5f1a2e1e09268ce975c5c8",
+      "path": "checkers/independent_fraction.py",
+      "adaptation": "adapt_independent"
+    },
+    {
+      "source": "studies/R004/r022-independent/inputs/witnesses.json",
+      "source_sha256": "fad3585d42fa2a433205a5f2c8a067bd44c6710014d54177b89938e3d5a1266e",
+      "path": "certificates/independent-witnesses.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/proofs-v1/lower-seven-eight.json",
+      "source_sha256": "595e5ae790371d99acd4c5df63135ef29b70ae327291d39549d893474e797ee8",
+      "path": "certificates/lower-bound.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-3/F45-T00-certificate.json",
+      "source_sha256": "361bc6d603143f7f5fe1daaaff3510ea16e3099e1b0f1b7dfd8cb064dce4961e",
+      "path": "certificates/source-witnesses/01.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-2/F15-T01-certificate.json",
+      "source_sha256": "ab6e7d5ef7506952dcafbf24d3169bb9b324e7d11c8cc5896be9701421554955",
+      "path": "certificates/source-witnesses/02.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-1/F45-T02-certificate.json",
+      "source_sha256": "d56a6f1fdecafee8629c3dea31122f4a7f195e11c7e8dc6b4b70f5a257043a89",
+      "path": "certificates/source-witnesses/03.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-0/F15-T03-certificate.json",
+      "source_sha256": "4447acae34e91d29758092acd5913933b3404b756f542bf6d69b08b542d7c511",
+      "path": "certificates/source-witnesses/04.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-3/F45-T04-certificate.json",
+      "source_sha256": "3d7611a4e50e43a24fda1be5d79c43989c9bed53c127a7139bed23c6b892dfba",
+      "path": "certificates/source-witnesses/05.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-2/F34-T05-certificate.json",
+      "source_sha256": "f2035f2e224e163a100d492a8ba47c75e46adc4283ceff911c3284ee394e5a92",
+      "path": "certificates/source-witnesses/06.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-3/F15-T06-certificate.json",
+      "source_sha256": "7ba3635c7aebed87caf3d1c4f9686dce11c16c65f324d37a7f98b058885ece92",
+      "path": "certificates/source-witnesses/07.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-0/F14-T07-certificate.json",
+      "source_sha256": "aab16e59e7e7c7af758939088cad2848e1600cad2c9ecd48abfe056780b5d1c4",
+      "path": "certificates/source-witnesses/08.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "studies/R022/scan/raw/shard-0/F11-T08-certificate.json",
+      "source_sha256": "3e10319cd284be5ef999883b153a1774fb5f32c00f033c0f4b85e7a7d1fde761",
+      "path": "certificates/source-witnesses/09.json",
+      "adaptation": "byte-identical"
+    },
+    {
+      "source": "heesch-certificates/Apache-2.0.txt",
+      "source_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "path": "Apache-2.0.txt",
+      "adaptation": "byte-identical standard license text"
+    },
+    {
+      "source": "heesch-certificates/CC-BY-4.0.txt",
+      "source_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "path": "CC-BY-4.0.txt",
+      "adaptation": "byte-identical standard license text"
+    }
+  ]
+}

@@ -1,0 +1,878 @@
+{
+  "schema": "R022.lower-seven-eight.v1",
+  "base_lower_six": {
+    "schema": "R022.lower-bound.v1",
+    "lemma": "NONZERO_COMPONENT_THREE_TERMS",
+    "bound": 6,
+    "faces": [
+      {
+        "xmask": 1,
+        "ymask": 1,
+        "terms": 6,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 1,
+        "ymask": 2,
+        "terms": 7,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 1,
+        "ymask": 3,
+        "terms": 8,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 1,
+        "ymask": 4,
+        "terms": 6,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "xmask": 1,
+        "ymask": 5,
+        "terms": 8,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 1,
+        "ymask": 6,
+        "terms": 8,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 1,
+        "ymask": 7,
+        "terms": 9,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 2,
+        "ymask": 1,
+        "terms": 7,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 2,
+        "ymask": 2,
+        "terms": 8,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 2,
+        "ymask": 3,
+        "terms": 9,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 2,
+        "ymask": 4,
+        "terms": 7,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "xmask": 2,
+        "ymask": 5,
+        "terms": 9,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 2,
+        "ymask": 6,
+        "terms": 9,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 2,
+        "ymask": 7,
+        "terms": 10,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 3,
+        "ymask": 1,
+        "terms": 8,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 3,
+        "ymask": 2,
+        "terms": 9,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 3,
+        "ymask": 3,
+        "terms": 10,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 3,
+        "ymask": 4,
+        "terms": 8,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "xmask": 3,
+        "ymask": 5,
+        "terms": 10,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 3,
+        "ymask": 6,
+        "terms": 10,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 3,
+        "ymask": 7,
+        "terms": 11,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 4,
+        "ymask": 1,
+        "terms": 6,
+        "three_x_indices": [
+          3,
+          4,
+          5
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 4,
+        "ymask": 2,
+        "terms": 7,
+        "three_x_indices": [
+          3,
+          4,
+          5
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 4,
+        "ymask": 3,
+        "terms": 8,
+        "three_x_indices": [
+          3,
+          4,
+          5
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 4,
+        "ymask": 4,
+        "terms": 6,
+        "three_x_indices": [
+          3,
+          4,
+          5
+        ],
+        "three_y_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "xmask": 4,
+        "ymask": 5,
+        "terms": 8,
+        "three_x_indices": [
+          3,
+          4,
+          5
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 4,
+        "ymask": 6,
+        "terms": 8,
+        "three_x_indices": [
+          3,
+          4,
+          5
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 4,
+        "ymask": 7,
+        "terms": 9,
+        "three_x_indices": [
+          3,
+          4,
+          5
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 5,
+        "ymask": 1,
+        "terms": 8,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 5,
+        "ymask": 2,
+        "terms": 9,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 5,
+        "ymask": 3,
+        "terms": 10,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 5,
+        "ymask": 4,
+        "terms": 8,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "xmask": 5,
+        "ymask": 5,
+        "terms": 10,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 5,
+        "ymask": 6,
+        "terms": 10,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 5,
+        "ymask": 7,
+        "terms": 11,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 6,
+        "ymask": 1,
+        "terms": 8,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 6,
+        "ymask": 2,
+        "terms": 9,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 6,
+        "ymask": 3,
+        "terms": 10,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 6,
+        "ymask": 4,
+        "terms": 8,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "xmask": 6,
+        "ymask": 5,
+        "terms": 10,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 6,
+        "ymask": 6,
+        "terms": 10,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 6,
+        "ymask": 7,
+        "terms": 11,
+        "three_x_indices": [
+          1,
+          2,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 7,
+        "ymask": 1,
+        "terms": 9,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 7,
+        "ymask": 2,
+        "terms": 10,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 7,
+        "ymask": 3,
+        "terms": 11,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 7,
+        "ymask": 4,
+        "terms": 9,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "xmask": 7,
+        "ymask": 5,
+        "terms": 11,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 7,
+        "ymask": 6,
+        "terms": 11,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "xmask": 7,
+        "ymask": 7,
+        "terms": 12,
+        "three_x_indices": [
+          0,
+          1,
+          3
+        ],
+        "three_y_indices": [
+          0,
+          2,
+          5
+        ]
+      }
+    ],
+    "proof": "Each coefficient is a linear sum of nonnegative theta with one fixed sign. The selected three coefficients in each nonzero component are nonzero on the entire open face, not just at the boolean sample. Both components must be nonzero when resultant!=0."
+  },
+  "low_faces": [
+    {
+      "xmask": 1,
+      "ymask": 1,
+      "terms": 6,
+      "three_x_indices": [
+        0,
+        1,
+        3
+      ],
+      "three_y_indices": [
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "xmask": 1,
+      "ymask": 2,
+      "terms": 7,
+      "three_x_indices": [
+        0,
+        1,
+        3
+      ],
+      "three_y_indices": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "xmask": 1,
+      "ymask": 4,
+      "terms": 6,
+      "three_x_indices": [
+        0,
+        1,
+        3
+      ],
+      "three_y_indices": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "xmask": 2,
+      "ymask": 1,
+      "terms": 7,
+      "three_x_indices": [
+        1,
+        2,
+        3
+      ],
+      "three_y_indices": [
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "xmask": 2,
+      "ymask": 4,
+      "terms": 7,
+      "three_x_indices": [
+        1,
+        2,
+        3
+      ],
+      "three_y_indices": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "xmask": 4,
+      "ymask": 1,
+      "terms": 6,
+      "three_x_indices": [
+        3,
+        4,
+        5
+      ],
+      "three_y_indices": [
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "xmask": 4,
+      "ymask": 2,
+      "terms": 7,
+      "three_x_indices": [
+        3,
+        4,
+        5
+      ],
+      "three_y_indices": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "xmask": 4,
+      "ymask": 4,
+      "terms": 6,
+      "three_x_indices": [
+        3,
+        4,
+        5
+      ],
+      "three_y_indices": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "types": [
+    "D,H",
+    "D,P2H",
+    "H",
+    "P1,H,H",
+    "P1,P2,H",
+    "P1,P2,P2H",
+    "P2H"
+  ],
+  "bound": 8
+}

@@ -1,0 +1,143 @@
+{
+  "schema": "R022.witness.rational.v1",
+  "a": [
+    "1",
+    "-2",
+    "0",
+    "1",
+    "0",
+    "0"
+  ],
+  "b": [
+    "1",
+    "0",
+    "-2",
+    "0",
+    "0",
+    "1"
+  ],
+  "terms": 6,
+  "resultant": "1",
+  "h": [
+    "0",
+    "1",
+    "-1"
+  ],
+  "factor_unit": "-1",
+  "infinity_multiplicity": 1,
+  "factors": [
+    {
+      "polynomial": [
+        "-1",
+        "1"
+      ],
+      "multiplicity": 1
+    },
+    {
+      "polynomial": [
+        "0",
+        "1"
+      ],
+      "multiplicity": 1
+    }
+  ],
+  "roots": [
+    {
+      "factor_index": 0,
+      "multiplicity": 1,
+      "interval": [
+        "1",
+        "1"
+      ],
+      "signs": {
+        "p": 1,
+        "n": 1,
+        "n_minus_p": 1
+      },
+      "kind": "P1"
+    },
+    {
+      "factor_index": 1,
+      "multiplicity": 1,
+      "interval": [
+        "0",
+        "0"
+      ],
+      "signs": {
+        "p": 1,
+        "n": 0,
+        "n_minus_p": -1
+      },
+      "kind": "P2H"
+    }
+  ],
+  "code": "P1,P2H,P2H",
+  "reactions": [
+    {
+      "reactant": [
+        0,
+        0
+      ],
+      "product": [
+        1,
+        0
+      ],
+      "rate": "1"
+    },
+    {
+      "reactant": [
+        1,
+        0
+      ],
+      "product": [
+        0,
+        0
+      ],
+      "rate": "2"
+    },
+    {
+      "reactant": [
+        2,
+        0
+      ],
+      "product": [
+        3,
+        0
+      ],
+      "rate": "1"
+    },
+    {
+      "reactant": [
+        0,
+        0
+      ],
+      "product": [
+        0,
+        1
+      ],
+      "rate": "1"
+    },
+    {
+      "reactant": [
+        0,
+        1
+      ],
+      "product": [
+        0,
+        0
+      ],
+      "rate": "2"
+    },
+    {
+      "reactant": [
+        0,
+        2
+      ],
+      "product": [
+        0,
+        3
+      ],
+      "rate": "1"
+    }
+  ]
+}

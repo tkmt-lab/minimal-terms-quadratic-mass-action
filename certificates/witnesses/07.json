@@ -1,0 +1,159 @@
+{
+  "schema": "R022.witness.rational.v1",
+  "a": [
+    "31",
+    "-62",
+    "0",
+    "31",
+    "0",
+    "0"
+  ],
+  "b": [
+    "33",
+    "0",
+    "-66",
+    "64",
+    "-128",
+    "97"
+  ],
+  "terms": 8,
+  "resultant": "9042049",
+  "h": [
+    "-64",
+    "159",
+    "-97"
+  ],
+  "factor_unit": "-97",
+  "infinity_multiplicity": 1,
+  "factors": [
+    {
+      "polynomial": [
+        "64/97",
+        "-159/97",
+        "1"
+      ],
+      "multiplicity": 1
+    }
+  ],
+  "roots": [
+    {
+      "factor_index": 0,
+      "multiplicity": 1,
+      "interval": [
+        "336/473",
+        "233/328"
+      ],
+      "signs": {
+        "p": 1,
+        "n": 1,
+        "n_minus_p": -1
+      },
+      "kind": "P2"
+    },
+    {
+      "factor_index": 0,
+      "multiplicity": 1,
+      "interval": [
+        "287/309",
+        "274/295"
+      ],
+      "signs": {
+        "p": 1,
+        "n": 1,
+        "n_minus_p": 1
+      },
+      "kind": "P1"
+    }
+  ],
+  "code": "P1,P2,P2H",
+  "reactions": [
+    {
+      "reactant": [
+        0,
+        0
+      ],
+      "product": [
+        1,
+        0
+      ],
+      "rate": "31"
+    },
+    {
+      "reactant": [
+        1,
+        0
+      ],
+      "product": [
+        0,
+        0
+      ],
+      "rate": "62"
+    },
+    {
+      "reactant": [
+        2,
+        0
+      ],
+      "product": [
+        3,
+        0
+      ],
+      "rate": "31"
+    },
+    {
+      "reactant": [
+        0,
+        0
+      ],
+      "product": [
+        0,
+        1
+      ],
+      "rate": "33"
+    },
+    {
+      "reactant": [
+        0,
+        1
+      ],
+      "product": [
+        0,
+        0
+      ],
+      "rate": "66"
+    },
+    {
+      "reactant": [
+        2,
+        0
+      ],
+      "product": [
+        2,
+        1
+      ],
+      "rate": "64"
+    },
+    {
+      "reactant": [
+        1,
+        1
+      ],
+      "product": [
+        1,
+        0
+      ],
+      "rate": "128"
+    },
+    {
+      "reactant": [
+        0,
+        2
+      ],
+      "product": [
+        0,
+        3
+      ],
+      "rate": "97"
+    }
+  ]
+}

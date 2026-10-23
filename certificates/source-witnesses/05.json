@@ -1,0 +1,195 @@
+{
+  "schema": "R022.witness.rational.v1",
+  "a": [
+    "0",
+    "0",
+    "0",
+    "56/93",
+    "-112/93",
+    "56/93"
+  ],
+  "b": [
+    "25/93",
+    "0",
+    "-50/93",
+    "4/31",
+    "-8/31",
+    "37/93"
+  ],
+  "terms": 8,
+  "resultant": "1960000/74805201",
+  "h": [
+    "-4/31",
+    "80/93",
+    "-149/93",
+    "56/93"
+  ],
+  "factor_unit": "56/93",
+  "infinity_multiplicity": 0,
+  "factors": [
+    {
+      "polynomial": [
+        "-2",
+        "1"
+      ],
+      "multiplicity": 1
+    },
+    {
+      "polynomial": [
+        "-2/7",
+        "1"
+      ],
+      "multiplicity": 1
+    },
+    {
+      "polynomial": [
+        "-3/8",
+        "1"
+      ],
+      "multiplicity": 1
+    }
+  ],
+  "roots": [
+    {
+      "factor_index": 0,
+      "multiplicity": 1,
+      "interval": [
+        "2",
+        "2"
+      ],
+      "signs": {
+        "p": 1,
+        "n": -1,
+        "n_minus_p": -1
+      },
+      "kind": "H"
+    },
+    {
+      "factor_index": 1,
+      "multiplicity": 1,
+      "interval": [
+        "2/7",
+        "2/7"
+      ],
+      "signs": {
+        "p": 1,
+        "n": 1,
+        "n_minus_p": -1
+      },
+      "kind": "P2"
+    },
+    {
+      "factor_index": 2,
+      "multiplicity": 1,
+      "interval": [
+        "3/8",
+        "3/8"
+      ],
+      "signs": {
+        "p": 1,
+        "n": 1,
+        "n_minus_p": 1
+      },
+      "kind": "P1"
+    }
+  ],
+  "code": "P1,P2,H",
+  "reactions": [
+    {
+      "reactant": [
+        2,
+        0
+      ],
+      "product": [
+        3,
+        0
+      ],
+      "rate": "56/93"
+    },
+    {
+      "reactant": [
+        1,
+        1
+      ],
+      "product": [
+        0,
+        1
+      ],
+      "rate": "112/93"
+    },
+    {
+      "reactant": [
+        0,
+        2
+      ],
+      "product": [
+        1,
+        2
+      ],
+      "rate": "56/93"
+    },
+    {
+      "reactant": [
+        0,
+        0
+      ],
+      "product": [
+        0,
+        1
+      ],
+      "rate": "25/93"
+    },
+    {
+      "reactant": [
+        0,
+        1
+      ],
+      "product": [
+        0,
+        0
+      ],
+      "rate": "50/93"
+    },
+    {
+      "reactant": [
+        2,
+        0
+      ],
+      "product": [
+        2,
+        1
+      ],
+      "rate": "4/31"
+    },
+    {
+      "reactant": [
+        1,
+        1
+      ],
+      "product": [
+        1,
+        0
+      ],
+      "rate": "8/31"
+    },
+    {
+      "reactant": [
+        0,
+        2
+      ],
+      "product": [
+        0,
+        3
+      ],
+      "rate": "37/93"
+    }
+  ],
+  "theta_normalized": [
+    "0",
+    "0",
+    "56/93",
+    "25/93",
+    "0",
+    "4/31"
+  ]
+}

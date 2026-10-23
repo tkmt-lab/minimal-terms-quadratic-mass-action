@@ -1,0 +1,21 @@
+{
+  "title": "Term-minimal realizations of nine line-type configurations in quadratic mass-action systems",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Takimoto, Tatsuhiko",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "description": "Article draft v1 and a certificate package. In two-species quadratic mass-action systems with reactant molecularity at most two, unrestricted products, a positive equilibrium with zero Jacobian, and nonzero homogeneous resultant, nine invariant-line-type multisets have minimum component-term counts 8,8,8,8,8,8,8,6,6. The package includes exact witnesses, a support-based lower-bound proof, and standard-library checkers from two implementations. The question comes from Yeung and Erban, with geometric foundations in Lyagina and Newton. Reaction counts are not minimized; historical full-text domain comparison and broader priority review remain incomplete. No priority, proof-assistant assurance or human peer review is claimed. Original text and numerical data: CC BY 4.0. Code: Apache 2.0.",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "mass-action kinetics",
+    "quadratic differential systems",
+    "invariant lines",
+    "term minimality",
+    "exact certificates"
+  ]
+}

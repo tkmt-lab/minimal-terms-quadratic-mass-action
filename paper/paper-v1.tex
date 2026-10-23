@@ -1,0 +1,457 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newcommand{\HH}{\mathrm H}
+\newcommand{\PP}{\mathrm P}
+\newcommand{\DD}{\mathrm D}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\nnz}{\operatorname{nnz}}
+\setlength{\emergencystretch}{1.5em}
+\title{Term-minimal realizations of nine line-type configurations\protect\\in quadratic mass-action systems}
+\author{Tatsuhiko Takimoto}
+\date{24 October 2026 \quad Draft v1}
+\begin{document}
+\maketitle
+\begin{abstract}
+Consider two-species mass-action systems with reactant molecularity at most two,
+unrestricted products, and a positive equilibrium whose Jacobian is the zero
+matrix. We count nonzero monomials separately in the two component equations,
+in concentration coordinates. After moving the equilibrium to the origin for
+geometric analysis, we require the two homogeneous quadratic components to have
+nonzero resultant. For nine configurations of invariant-line types, the minimum
+term counts are $8,8,8,8,8,8,8,6,6$. Rational witnesses attain every bound.
+The lower bounds follow from a nonnegative six-parameter representation and an
+exhaustion of the eight support faces with fewer than eight terms. Relative to
+the examples in Yeung and Erban's classification paper, including its six-term
+example, five upper bounds decrease and four existing upper bounds are proved
+optimal within this domain. The count concerns ODE terms; minimum reaction
+counts are a separate problem.
+\end{abstract}
+
+\section{The question and the result}
+Yeung and Erban~\cite{YE} identify nine realizable geometric configurations at
+positive equilibria with zero linearization in planar second-order chemical
+systems. Their discussion asks whether the nonzero-term counts of the displayed
+examples can be reduced. This paper gives exact minima for the nine
+invariant-line configurations under the explicit nonzero-resultant condition
+below. Table~\ref{tab:minima} states the result and compares the examples.
+
+The geometric background is the classification attributed to
+Lyagina~\cite{Lyagina} and developed in Newton's invariant-line
+description~\cite{Newton}. We use the line-type notation explained in
+Section~\ref{sec:lines}, and distinguish configurations by their multisets of
+line types. This avoids depending on inconsistent numerical labels in the
+source examples. The proof below does not require a new proof of the historical
+classification or an identification of its entire domain with ours.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}lrrrrl@{}}
+\toprule
+Configuration & Row$^{a}$ & Table 1 & Best$^{b}$ & Minimum & Comparison \\
+\midrule
+$\HH$ & 1 & 9 & 9 & 8 & decreases \\
+$\PP_2\HH$ & 4 & 8 & 8 & 8 & attained before \\
+$\DD,\HH$ & 5 & 10 & 10 & 8 & decreases \\
+$\DD,\PP_2\HH$ & 8 & 8 & 8 & 8 & attained before \\
+$\PP_1,\PP_2,\HH$ & 11 & 9 & 9 & 8 & decreases \\
+$\PP_1,\HH,\HH$ & 12 & 9 & 9 & 8 & decreases \\
+$\PP_1,\PP_2,\PP_2\HH$ & 14 & 8 & 8 & 8 & attained before \\
+$\PP_1,\HH,\PP_2\HH$ & 15 & 8 & 6 & 6 & attained before \\
+$\PP_1,\PP_2\HH,\PP_2\HH$ & 16 & 8 & 8 & 6 & decreases \\
+\bottomrule
+\end{tabular}
+\caption{Minimum numbers of component monomials. $^{a}$Row label in Table 1
+of~\cite{YE}, used only to locate the example. $^{b}$Best count among that
+table and the six-term example in its Section 4. The configurations here are
+computed from the coefficients, not copied from the printed labels.}
+\label{tab:minima}
+\end{table}
+
+\section{Chemical domain and the quantity minimized}
+Write $\dot x=f(x,y)$ and $\dot y=g(x,y)$, with real coefficients and total
+degree at most two. A reaction
+$\alpha X+\beta Y\longrightarrow\gamma X+\delta Y$ has a positive rate
+constant and $\alpha+\beta\leq2$. We impose no bound on
+$\gamma+\delta$. Consequently the coefficient of a monomial not containing
+$x$ must be nonnegative in $f$, and the coefficient of a monomial not
+containing $y$ must be nonnegative in $g$.
+These sign conditions also suffice: realize each nonzero coefficient by a
+reaction that adds or removes one molecule of the corresponding species.
+A negative coefficient has that species in its reactant, so removal is
+permitted. This constructs a network with positive rate constants.
+
+Let $(x_*,y_*)$ be a selected positive equilibrium and require
+$Df(x_*,y_*)=Dg(x_*,y_*)=0$. Positive changes of concentration units place it
+at $(1,1)$. Such changes multiply each coefficient by a positive number and
+preserve the number of nonzero terms. With $u=x-1$ and $v=y-1$, the shifted
+equations have the form
+\begin{equation}\label{eq:shifted}
+ \dot u=P(u,v)=Au^2+Buv+Cv^2,\qquad
+ \dot v=Q(u,v)=Du^2+Euv+Fv^2.
+\end{equation}
+Translation is used to study invariant lines; all term counts remain in
+the concentration variables $x,y$.
+
+In the monomial order $(1,x,y,x^2,xy,y^2)$, the coefficient vectors are
+\begin{align}
+ a&=(A+B+C,-2A-B,-B-2C,A,B,C),\nonumber\\
+ b&=(D+E+F,-2D-E,-E-2F,D,E,F).\label{eq:original}
+\end{align}
+The chemical sign conditions give the following parameterization:
+\begin{equation}\label{eq:cone}
+\begin{split}
+ \theta&=(s,t,c,q,r,d)\in\mathbb R_{\geq0}^{6},\\
+ a&=(s,-2s-t,t,s+t+c,-t-2c,c),\\
+ b&=(q,r,-2q-r,d,-r-2d,q+r+d),\\
+ (A,B,C,D,E,F)&=(s+t+c,-t-2c,c,d,-r-2d,q+r+d).
+\end{split}
+\end{equation}
+Every chemical quadratic system with the specified equilibrium and zero
+Jacobian has this form, since $s=a_{00}$, $t=a_{01}$, $c=a_{02}$,
+$q=b_{00}$, $r=b_{10}$ and $d=b_{20}$. Conversely, direct substitution in
+\eqref{eq:cone} verifies all these properties.
+
+\begin{definition}\label{def:domain}
+A parameter vector in~\eqref{eq:cone} is admissible if the homogeneous
+resultant $\Res(P,Q)$ is nonzero. Its term count is
+\[
+ M(\theta)=\nnz(a)+\nnz(b).
+\]
+For a specified line-type multiset $T$, its minimum is taken over all
+admissible real parameter vectors with type $T$.
+\end{definition}
+The resultant condition means that $P$ and $Q$ have no common zero on the
+complex projective line; it excludes zero components and common factors.
+It is part of the domain, not a conclusion inferred from an isolated real
+equilibrium. The same monomial appearing in both components contributes two
+to $M$. Positive concentration and time scalings preserve $M$; arbitrary
+affine changes of concentration variables are not operations in this
+minimization problem. A reaction may contribute to both components, so
+$M$ does not count reactions.
+
+\section{Invariant-line types}\label{sec:lines}
+A finite slope $z=v/u$ defines an invariant line precisely when
+\begin{equation}\label{eq:h}
+ h(z)=zP(1,z)-Q(1,z)=Cz^3+(B-F)z^2+(A-E)z-D=0.
+\end{equation}
+At any real root, $p(z)=P(1,z)\ne0$ by the resultant condition. Set
+\begin{equation}\label{eq:rho}
+ n(z)=E+(2F-B)z-2Cz^2,\qquad
+ \rho(z)=\frac{n(z)}{p(z)}=1-\frac{h'(z)}{p(z)}.
+\end{equation}
+For a simple root, the four symbols in Table~\ref{tab:types} record the
+range of $\rho$. A double root has $\rho=1$ and is denoted $\DD$.
+The multiplicity condition is essential: $\DD$ does not include triple
+roots. All roots and the vertical direction are counted as projective
+directions, so each line appears once.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Symbol & $\PP_1$ & $\PP_2$ & $\HH$ & $\PP_2\HH$\\
+\midrule
+Condition (simple root) & $\rho>1$ & $0<\rho<1$ & $\rho<0$ & $\rho=0$\\
+\bottomrule
+\end{tabular}
+\caption{Operational definitions of the four simple line types.}
+\label{tab:types}
+\end{table}
+
+These quantities have a direct geometric meaning. Near a finite invariant
+line $v=zu$, put $w=v-zu$. Linearizing the scalar trajectory equation gives
+$dw/du=\rho w/u$, whose first variation is proportional to
+$|u|^\rho$. This distinguishes approach tangent to the line at the origin
+($\PP_1$), relative approach at large distance ($\PP_2$), vanishing
+transverse distance at large distance ($\HH$), and the boundary case
+($\PP_2\HH$). The definitions used in the proof are the algebraic
+conditions of~\eqref{eq:rho}, rather than sector counts alone.
+
+The vertical line $u=0$ is invariant if and only if $C=0$. In this case
+$F>0$ and $B\leq0$, so it is a simple projective root and
+\begin{equation}\label{eq:infinity}
+ \rho_\infty=B/F.
+\end{equation}
+Indeed the swapped slope polynomial is
+$wQ(w,1)-P(w,1)$, whose derivative at $w=0$ is $F-B>0$.
+We use unordered multisets of these symbols. No assertion that all nine
+are distinct under arbitrary local topological conjugacy is needed.
+
+\section{Exact upper bounds}
+\begin{theorem}\label{thm:main}
+In the domain of Definition~\ref{def:domain}, the minima for the nine
+configurations in Table~\ref{tab:minima}, in the displayed order, are
+\[
+ 8,8,8,8,8,8,8,6,6.
+\]
+\end{theorem}
+Table~\ref{tab:witness} gives integer parameter vectors that attain these
+counts. Together with~\eqref{eq:cone}, the table specifies every coefficient
+of every witness exactly. Positive common scaling of the vector amounts
+to a change of time units.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}clrrrrrrr@{}}
+\toprule
+ID & Configuration & $s$ & $t$ & $c$ & $q$ & $r$ & $d$ & $M$\\
+\midrule
+1 & $\HH$ & 0&0&3&1&0&2&8\\
+2 & $\PP_2\HH$ & 1&0&0&2&0&1&8\\
+3 & $\DD,\HH$ & 0&0&9&4&0&2&8\\
+4 & $\DD,\PP_2\HH$ & 2&0&0&3&0&1&8\\
+5 & $\PP_1,\PP_2,\HH$ & 0&0&56&25&0&12&8\\
+6 & $\PP_1,\HH,\HH$ & 1&1&0&0&0&2&8\\
+7 & $\PP_1,\PP_2,\PP_2\HH$ & 31&0&0&33&0&64&8\\
+8 & $\PP_1,\HH,\PP_2\HH$ & 1&0&0&0&0&1&6\\
+9 & $\PP_1,\PP_2\HH,\PP_2\HH$ & 1&0&0&1&0&0&6\\
+\bottomrule
+\end{tabular}
+\caption{Exact witnesses, with parameters in~\eqref{eq:cone}.}
+\label{tab:witness}
+\end{table}
+
+\clearpage
+For completeness, Table~\ref{tab:h} records their slope polynomials and
+transverse ratios. In row 5 the ratios follow the root order
+$2,2/7,3/8$. In rows 6--8 the paired signs have the same order in the
+roots and the ratios. The only real root in row 1 is $2$, and row 2 has
+no real finite root. In rows 3 and 4, $1/3$ and $1/2$, respectively, are
+double roots.
+
+\begin{table}[ht]
+\centering\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}clll@{}}
+\toprule
+ID & $h(z)$ & Finite roots : $\rho$ & $\rho_\infty$\\
+\midrule
+1 & $(z-2)(3z^2-3z+1)$ & $2:-4/3$ & ---\\
+2 & $-3z^2+3z-1$ & none & $0$\\
+3 & $(z-2)(3z-1)^2$ & $2:-16/9;\quad 1/3:1$ & ---\\
+4 & $-(2z-1)^2$ & $1/2:1$ & $0$\\
+5 & $(z-2)(7z-2)(8z-3)$ & $2,2/7,3/8:-25/14,7/10,48/35$ & ---\\
+6 & $-3z^2+6z-2$ & $1\pm1/\sqrt3:4\pm3\sqrt3$ & $-1/2$\\
+7 & $-97z^2+159z-64$ & $(159\pm\sqrt{449})/194:1\pm\sqrt{449}/31$ & $0$\\
+8 & $-z^2+3z-1$ & $(3\pm\sqrt5)/2:1\pm\sqrt5$ & $0$\\
+9 & $z-z^2$ & $0:0;\quad 1:2$ & $0$\\
+\bottomrule
+\end{tabular}
+\caption{Algebraic checks of the line types. A dash means that the vertical
+direction is not invariant.}
+\label{tab:h}
+\end{table}
+
+The homogeneous resultants, in the same order, are
+\[
+ 9,\ 9,\ 1296,\ 64,\ 1960000,\ 4,\ 9042049,\ 1,\ 1.
+\]
+All are nonzero. Thus each displayed system is admissible; substituting its
+parameters into~\eqref{eq:cone} gives the asserted count and chemical
+realization. In row 6, direct substitution in~\eqref{eq:rho} is also a
+convenient way to check the two finite types.
+
+\section{Lower bounds over real parameters}\label{sec:lower}
+The lower bound does not depend on searching a finite grid of coefficients.
+It follows from the support of the nonnegative coordinates in~\eqref{eq:cone}.
+Encode the positive entries of $(s,t,c)$ by a mask with weights $(1,2,4)$.
+Use the same weights for $(q,r,d)$. Positivity and the absence of cancellation
+in the sums in~\eqref{eq:cone} give the component counts
+\begin{equation}\label{eq:masks}
+\begin{array}{c|rrrrrrr}
+ \text{mask}&1&2&3&4&5&6&7\\\hline
+ \text{component terms}&3&4&5&3&5&5&6.
+\end{array}
+\end{equation}
+A zero mask would make one component identically zero and is excluded.
+It follows at once that $M\geq6$.
+
+\begin{lemma}\label{lem:low}
+An admissible system with $M<8$ has configuration either
+$\{\PP_1,\HH,\PP_2\HH\}$ or
+$\{\PP_1,\PP_2\HH,\PP_2\HH\}$.
+\end{lemma}
+\begin{proof}
+Equation~\eqref{eq:masks} leaves just eight pairs of masks:
+\[
+ (1,1),(1,4),(4,1),(4,4),(1,2),(2,1),(4,2),(2,4).
+\]
+Three pairs have both $s=q=0$, namely $(4,4),(4,2),(2,4)$; in these pairs,
+one has $P(1,1)=s=0$ and $Q(1,1)=q=0$. The components have a common
+projective zero, contradicting admissibility.
+
+Interchanging the species exchanges the masks and preserves the line types.
+For a nonzero finite slope this follows by conjugating the trajectory slope
+map $f(z)=Q(1,z)/P(1,z)$ with $z\mapsto1/z$; the derivative at its fixed
+point remains $\rho$. The horizontal and vertical charts give the same
+statement for the remaining directions. Hence only $(1,1),(1,4),(1,2)$
+need be considered. Write their positive coordinates as $a,b>0$.
+
+For $(1,1)$, $P=au^2$ and $Q=bv^2$. The directions are $0,a/b,\infty$
+and the ratios are $0,2,0$. The configuration is
+$\{\PP_1,\PP_2\HH,\PP_2\HH\}$.
+
+For $(1,4)$, $P=au^2$ and $Q=b(u-v)^2$. Here
+\[
+ h(z)=-bz^2+(a+2b)z-b,\qquad \Delta=a^2+4ab>a^2.
+\]
+The finite roots have ratios $1\pm\sqrt\Delta/a$ and the vertical
+direction has ratio zero. The configuration is
+$\{\PP_1,\HH,\PP_2\HH\}$.
+
+For $(1,2)$, $P=au^2$ and $Q=bv(v-u)$. The directions
+$0,(a+b)/b,\infty$ have ratios $-b/a,2+b/a,0$, again giving
+$\{\PP_1,\HH,\PP_2\HH\}$. In all three families the resultant is
+$a^2b^2>0$. This exhausts all eight faces for all real choices of their
+positive coordinates.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+The last two configurations attain six terms by Table~\ref{tab:witness},
+and~\eqref{eq:masks} proves that fewer are impossible. Lemma~\ref{lem:low}
+excludes fewer than eight terms for each of the other seven configurations.
+Their eight-term witnesses complete the proof.
+\end{proof}
+
+\section{Computation and assurance}\label{sec:assurance}
+The calculation that led to the witnesses decomposes the parameter cone into
+$7\cdot7=49$ nonempty support faces and considers the nine target types on
+each face. Polynomial solving supplies candidates. The minima depend only
+on the nine rational witnesses and the lower-bound argument in
+Section~\ref{sec:lower}; unresolved feasibility cases on larger faces are
+not used in that argument.
+
+For a rational witness, an exact certificate contains the component
+coefficients, a factorization of $h$, root multiplicities, rational isolating
+intervals, and signs of $p,n,n-p$ at each real root. A checker using rational
+arithmetic verifies the factorization, squarefreeness of its factors,
+Sturm root counts, interval signs or exact zero identities, the vertical
+direction, and the resultant. It also checks the equilibrium, zero Jacobian,
+chemical signs, term count, and a reaction realization. Irrational roots of
+rational polynomials require isolating intervals, not floating-point
+classification. Lower-bound certificates encode the component support
+counts and the three symbolic families in Lemma~\ref{lem:low}.
+
+The assurance consists of these exact certificate checks and the displayed
+algebraic proof; no proof-assistant formalization or human peer
+review is claimed. Provenance, checker versions, and the bounded literature
+search are recorded separately in the accompanying
+\texttt{VERIFICATION-RECORD.md}.
+
+\section{Independent verification}
+The nine minima were also obtained in a separate verification that used the
+problem specification and its stated definitions, while withholding the
+research-side minima, proofs, implementations, and certificates. It constructed
+integer-coefficient witnesses and derived a lower bound by classifying all
+$2^6=64$ zero-or-positive supports of the nonnegative parameters. Removing
+supports with a zero component leaves the 49 faces considered above. The eight
+supports with $M<8$ reduce to the same three positive parameter families after
+excluding common factors and interchanging the species. All nine independently
+obtained minima agree with Theorem~\ref{thm:main}.
+
+The separate derivation was checked with a symbolic-algebra implementation
+using SymPy and a separately written Python standard-library implementation.
+The reported results agree. These checks were produced within one verification;
+their agreement is not an additional independent human review.
+
+The shared starting point includes the admissible domain, the nonnegative
+six-parameter representation~\eqref{eq:cone}, its component-term counting rule,
+and the invariant-line tests~\eqref{eq:h}--\eqref{eq:infinity}. From these
+supplied preparations, the verification separately determined the minima,
+constructed witnesses, and proved the lower bounds. The specification also
+included published examples, so the verification was not blind to those known
+examples. Neither derivation includes a full-text comparison of the
+classification domains in Newton's and Lyagina's original papers.
+
+\section{Comparison and scope}
+The comparison in Table~\ref{tab:minima} uses coefficients rather than class
+numbers. In Table 1 of~\cite{YE}, the printed line-type labels in rows
+14--16 differ from the types obtained from those rows' coefficients using
+\eqref{eq:h}--\eqref{eq:infinity}. Section 4 of that paper gives
+\[
+ \dot x=(x-y)^2,\qquad \dot y=(y-1)^2.
+\]
+Its six terms give configuration $\{\PP_1,\HH,\PP_2\HH\}$, as can also
+be seen by exchanging the species in row 8 of Table~\ref{tab:witness}.
+The text calls this class 12. We retain the explicit system and its
+computed configuration as the comparison, without proposing a corrected
+historical numbering convention. Four parabolic sectors and two hyperbolic
+sectors alone do not distinguish the line-type multisets being minimized.
+
+Lemma 6(ii) of~\cite{YE} contains a further boundary discrepancy: for
+$\eta_2>1$ it prints $\eta_1<1/\eta_2$, whereas its proof, equation (3.43),
+gives $\eta_1\leq1/\eta_2$. The admissible system
+$P=\tfrac12u^2$, $Q=(u-v)^2$ has finite slopes $1/2,2$ and attains equality.
+Its resultant is $1/4$ and its ratios are $-2,4,0$, including the vertical
+direction. The nonnegative parameter cone in~\eqref{eq:cone} includes this
+valid boundary; no strict version of that source inequality is used here.
+
+Related minimality problems use different constraints. Chen and
+Tang~\cite{CT} classify minimal-dimensional degenerate zero-one networks;
+their two-dimensional condition concerns the stoichiometric subspace and
+their degeneracy condition differs from a zero planar Jacobian at a
+selected equilibrium. Plesa and Sprott~\cite{PS} study small monomial
+counts for three-dimensional chemical systems with chaos. Beldiman and
+Halanay~\cite{BH} classify minimal canard networks; their canard-point
+conditions require nonzero cross derivatives. These results do not supply
+the nine minima of Table~\ref{tab:minima} in the material examined.
+
+The result covers the real coefficient domain of Definition~\ref{def:domain}.
+It leaves systems with zero resultant, equilibria on the boundary of the
+concentration quadrant, other molecularity constraints, and minimum numbers
+of reactions outside its scope. The bounded literature review has not
+located the same nine minima. Full-text review of the historical sources
+and a broader priority search remain incomplete.
+
+\paragraph{Use of AI.}
+AI tools assisted the algebraic search, certificate software, literature
+comparison, and drafting. The mathematical claims are supported by the
+proof and exact data described above. Responsibility for their review and
+any decision to publish rests with the author.
+
+\paragraph{Acknowledgment of prior work.}
+The question comes from Yeung and Erban, and the geometric framework from
+the work of Lyagina and Newton cited above. The author is grateful for
+these foundations. This acknowledgment concerns their published work and
+does not imply their involvement in or endorsement of this draft.
+
+\begin{thebibliography}{9}
+\bibitem{YE} N. Yeung and R. Erban,
+\emph{Classification of strongly non-hyperbolic critical points of planar
+second-order chemical reaction systems}, arXiv:2610.06130v1 (2026).
+\url{https://arxiv.org/abs/2610.06130v1}.
+
+\bibitem{Lyagina} L. S. Lyagina,
+\emph{The integral curves of the equation
+$y'=(ax^2+bxy+cy^2)/(dx^2+exy+fy^2)$},
+Uspekhi Matematicheskikh Nauk \textbf{6}, no. 2(42), 171--183 (1951),
+in Russian. \url{https://www.mathnet.ru/eng/rm6840}.
+
+\bibitem{Newton} T. A. Newton,
+\emph{Two Dimensional Homogeneous Quadratic Differential Systems},
+SIAM Review \textbf{20}(1), 120--138 (1978).
+\url{https://doi.org/10.1137/1020007}.
+
+\bibitem{CT} Y. Chen and X. Tang,
+\emph{Characterization of Minimal Degenerate Zero-One Reaction Networks},
+arXiv:2608.18509v1 (2026). \url{https://arxiv.org/abs/2608.18509v1}.
+
+\bibitem{PS} T. Plesa and J. C. Sprott,
+\emph{Simple chemical systems with chaos}, arXiv:2601.02787v1 (2026).
+\url{https://arxiv.org/abs/2601.02787v1}.
+
+\bibitem{BH} M.-M. Beldiman and A.-D. Halanay,
+\emph{Canard points in planar mass-action networks: a flux criterion,
+a duality, and a complete classification}, arXiv:2610.27188v1 (2026).
+\url{https://arxiv.org/abs/2610.27188v1}.
+\end{thebibliography}
+\end{document}

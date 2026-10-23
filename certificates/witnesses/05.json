@@ -1,0 +1,187 @@
+{
+  "schema": "R022.witness.rational.v1",
+  "a": [
+    "0",
+    "0",
+    "0",
+    "56",
+    "-112",
+    "56"
+  ],
+  "b": [
+    "25",
+    "0",
+    "-50",
+    "12",
+    "-24",
+    "37"
+  ],
+  "terms": 8,
+  "resultant": "1960000",
+  "h": [
+    "-12",
+    "80",
+    "-149",
+    "56"
+  ],
+  "factor_unit": "56",
+  "infinity_multiplicity": 0,
+  "factors": [
+    {
+      "polynomial": [
+        "-2",
+        "1"
+      ],
+      "multiplicity": 1
+    },
+    {
+      "polynomial": [
+        "-2/7",
+        "1"
+      ],
+      "multiplicity": 1
+    },
+    {
+      "polynomial": [
+        "-3/8",
+        "1"
+      ],
+      "multiplicity": 1
+    }
+  ],
+  "roots": [
+    {
+      "factor_index": 0,
+      "multiplicity": 1,
+      "interval": [
+        "2",
+        "2"
+      ],
+      "signs": {
+        "p": 1,
+        "n": -1,
+        "n_minus_p": -1
+      },
+      "kind": "H"
+    },
+    {
+      "factor_index": 1,
+      "multiplicity": 1,
+      "interval": [
+        "2/7",
+        "2/7"
+      ],
+      "signs": {
+        "p": 1,
+        "n": 1,
+        "n_minus_p": -1
+      },
+      "kind": "P2"
+    },
+    {
+      "factor_index": 2,
+      "multiplicity": 1,
+      "interval": [
+        "3/8",
+        "3/8"
+      ],
+      "signs": {
+        "p": 1,
+        "n": 1,
+        "n_minus_p": 1
+      },
+      "kind": "P1"
+    }
+  ],
+  "code": "P1,P2,H",
+  "reactions": [
+    {
+      "reactant": [
+        2,
+        0
+      ],
+      "product": [
+        3,
+        0
+      ],
+      "rate": "56"
+    },
+    {
+      "reactant": [
+        1,
+        1
+      ],
+      "product": [
+        0,
+        1
+      ],
+      "rate": "112"
+    },
+    {
+      "reactant": [
+        0,
+        2
+      ],
+      "product": [
+        1,
+        2
+      ],
+      "rate": "56"
+    },
+    {
+      "reactant": [
+        0,
+        0
+      ],
+      "product": [
+        0,
+        1
+      ],
+      "rate": "25"
+    },
+    {
+      "reactant": [
+        0,
+        1
+      ],
+      "product": [
+        0,
+        0
+      ],
+      "rate": "50"
+    },
+    {
+      "reactant": [
+        2,
+        0
+      ],
+      "product": [
+        2,
+        1
+      ],
+      "rate": "12"
+    },
+    {
+      "reactant": [
+        1,
+        1
+      ],
+      "product": [
+        1,
+        0
+      ],
+      "rate": "24"
+    },
+    {
+      "reactant": [
+        0,
+        2
+      ],
+      "product": [
+        0,
+        3
+      ],
+      "rate": "37"
+    }
+  ]
+}

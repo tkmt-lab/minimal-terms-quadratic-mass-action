@@ -1,0 +1,12 @@
+Copyright 2026 Tatsuhiko Takimoto.
+
+Code (checkers/*.py, tools/*.py and .github/workflows/*.yml): Apache License 2.0;
+the full text is in Apache-2.0.txt.
+
+Original prose and numerical data (Markdown, TeX, PDF, JSON, CITATION.cff and
+other metadata): Creative Commons Attribution 4.0 International;
+the full text is in CC-BY-4.0.txt.
+
+The licenses do not relicense cited works. Their authors retain their rights.
+Cited papers are not redistributed. Source coefficients are attributed to
+Yeung and Erban in the article, README and verification record.
